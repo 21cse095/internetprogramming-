@@ -1,0 +1,33 @@
+<h1 style="color:BLACK;">
+	YAHOO
+</h1>
+<p id="GFG_UP" style="font-size: 15px;
+					font-weight: bold;">
+</p>
+<button onclick="gfg_Run()">
+	click here
+</button>
+<p id="GFG_DOWN" style="color:BLACK;
+						font-size: 20px;
+						font-weight: bold;">
+</p>
+<script>
+	var el_up = document.getElementById("GFG_UP");
+	var el_down = document.getElementById("GFG_DOWN");
+	
+	var expression =
+/[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
+	var regex = new RegExp(expression);
+	var url = 'www.yahoo.com';
+	el_up.innerHTML = "URL = '" + url + "'";
+	
+	function gfg_Run() {
+		var res = "";
+		if (url.match(regex)) {
+			res = "It is a valid website";
+		} else {
+			res = "It is an Invalid website";
+		}
+		el_down.innerHTML = res;
+	}
+</script>

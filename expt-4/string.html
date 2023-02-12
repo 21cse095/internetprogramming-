@@ -1,0 +1,33 @@
+const test = (str) => { 
+   if (str.length === 0) 
+    {
+    return 'STRING SHOULD NOT BE EMPTY!'
+   }
+    if (typeof str !== 'string')
+     {
+       return 'IT SHOULD BE A STRING'
+     }
+  const occurrence_Map = new Map()
+
+  for (const char of str) 
+    {
+      occurrence_Map.set(char, occurrence_Map.get(char) + 1 || 1)
+    }
+
+ 
+  let max_char = { char: '', occur: -Infinity }
+
+  for (const [char, occur] of occurrence_Map) {
+    if (occur > max_char.occur) {
+      max_char = { char,occur }
+    }
+  }
+
+  return max_char.char
+}
+console.log(test("YESHAA"))
+console.log(test(111))
+console.log(test("SCIENCE"))
+console.log(test("PUPPY"))
+console.log(test("VISHWAA"))
+
