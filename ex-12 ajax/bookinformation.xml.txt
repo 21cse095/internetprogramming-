@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<books>
+  <book>
+    <title>Navratna</title>
+    <author> Virsena</author>
+    <year>2023</year>
+    <price>450</price>
+    <available>yes</available>
+  </book>
+   <book>
+    <title>Buddha charita</title>
+    <author>Asvaghosa </author>
+    <year>2023</year>
+    <price>950</price>
+    <available>no</available>
+  </book>
+   <book>
+    <title>Panch tantra</title>
+    <author>Vishnu Sharma</author>
+    <year>2023</year>
+    <price>450</price>
+    <available>no</available>
+  </book>
+    <book>
+    <title>Gathasaptashati</title>
+    <author>Hala</author>
+    <year>2023</year>
+    <price>650</price>
+    <available>yes</available>
+  </book>
+   <book>
+    <title>Gitagovinda</title>
+    <author>Jayadev</author>
+    <year>2023</year>
+    <price>399</price>
+    <available>no</available>
+  </book>
+  
+</books>
