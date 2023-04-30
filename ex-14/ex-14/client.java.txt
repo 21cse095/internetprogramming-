@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication14;
+
+
+
+
+/**
+ *
+ * @author Lenovo
+ */
+public class JavaApplication14 {
+     public static void main(String[] args) {
+
+  System.out.println(view());
+    }
+
+    private static String view() {
+        ex14.NewWebService_Service service = new ex14.NewWebService_Service();
+        ex14.NewWebService port = service.getNewWebServicePort();
+        return port.view();
+    }  
+    
+}
